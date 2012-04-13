@@ -1,0 +1,23 @@
+Benchmarks measuring the impact of Performance Report's recommendations
+
+To run:
+    make
+
+Output:
+    (benchmark orig-avg-time pr-opt-avg-time hand-opt-avg-time
+               1 pr-opt-avg-norm-time hand-opt-avg-norm-time)
+    ...
+
+
+
+orig/
+  original, non-optimized versions
+pr-opt/
+  original versions, modified by following Performance Report's advice
+hand-opt/
+  versions hand-optmized by experts
+
+
+Note: The video (codec) and images-entry (ray-tracer) benchmarks do
+not have a hand-optimized version. The `pr-opt' and `hand-opt'
+versions are identical (the harness script needs both to be present).
